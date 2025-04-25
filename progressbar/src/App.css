@@ -1,0 +1,76 @@
+body{
+  background-color: #1d1d1d;
+}
+.main-container{
+  position: relative;
+  text-align: center;
+  top: calc(100vh/3);
+
+}
+.text{
+  color: #fff;
+}
+
+.progressbar-container{
+  position: absolute;
+  height:50px;
+  background-color: #fff;
+  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+}
+.input-number{
+  height:50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  width: 110px;
+  color: white;
+  padding-left: 20px;
+  border-radius: 20px;
+  background-color: #171717;
+  border: #000;
+  box-shadow: 5px 5px #0e0e0ed4;
+}
+.logo{
+  position: absolute;
+  left: 52%;
+  top: 38%;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.progress{
+  position: absolute;
+  left: 0;
+  background-color: teal;
+  height: 50px;
+  border-radius:30px ;
+  transition: width 0.5s ease-in;
+}
+.popup{
+  height: 369px;
+  width: 545px;
+  background-image: url('../public/oops.png');
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 2;
+  top: 50%;
+  border-radius: 30px;
+  object-fit: cover;
+  background-position: center;
+  background-color: #000000;
+  animation: rippleIn 0.6s ease-out forwards;
+}
+
+@keyframes rippleIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
